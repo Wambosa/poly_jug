@@ -1,2 +1,14 @@
-# poly_jug
-didn't i already try to unify all database interfaces? ah what the hell, trying again
+# polyjug
+_didn't i already try to unify all database interfaces? ah what the hell, trying again_
+
+### What im supposed to do
+- interface with relational mySql, sqlite, MSsql
+
+### Whats probably going to happen
+- sqlite3
+- maybe mysql
+
+
+### notes
+- ive done this before if i can find my old code
+- sqlite will be the base language, possibly converted into mysql/mssql
