@@ -12,3 +12,8 @@ _didn't i already try to unify all database interfaces? ah what the hell, trying
 ### notes
 - ive done this before if i can find my old code
 - sqlite will be the base language, possibly converted into mysql/mssql
+
+
+### future
+- need to deal with all the database types cleverly (most likely using reflect + switching)
+- query lang conversion, that was fun
