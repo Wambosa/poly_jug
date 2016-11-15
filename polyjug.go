@@ -13,12 +13,22 @@ type Jug struct {
 
 func New(driverName string, path string) (*Jug, error) {
     
-    // todo: may not need to do this. hmm.
-    // db, err := sql.Open("sqlite3", ConnectionString)
-	// if(err != nil){return nil, err}
-	
+    // note: used for single transactions with reconnect (good for my slow polling)
 	return &Jug {
 	    DB: nil,
+	    Path: path,
+	}, nil
+}
+
+func NewPersistant(driverName string, path string) (*Jug, error) {
+    
+    // note: used when the connection should remain open between transactions
+    
+    db, err := sql.Open("sqlite3", path)
+	if(err != nil){return nil, err}
+	
+	return &Jug {
+	    DB: db, //if this is set, then do not defer db.close
 	    Path: path,
 	}, nil
 }
