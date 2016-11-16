@@ -12,7 +12,7 @@ _didn't i already try to unify all database interfaces? ah what the hell, trying
 ### notes
 - ive done this before if i can find my old code
 - sqlite will be the base language, possibly converted into mysql/mssql
-
+- build a complete type list for sqlite mysql and msql. chances are it is already in another sql repo
 
 ### future
 - need to deal with all the database types cleverly (most likely using reflect + switching)
